@@ -1,3 +1,100 @@
+/* ---------- GENERAL ---------- */
+* {
+  margin: 0 auto;
+  padding: 0; }
 
+/* ---------- LINKS ---------- */
+a:link {
+  color: #ffffff; }
+
+a:visited {
+  color: #ffffff; }
+
+a:hover {
+  color: #ffffff; }
+
+a:active {
+  color: #ffffff; }
+
+/* ---------- NAV ---------- */
+nav {
+  text-align: center;
+  background-color: #333333;
+  min-height: 250px; }
+  nav p {
+    padding-top: 150px; }
+    @media (min-width: 768px) {
+      nav p {
+        padding-top: 70px;
+        display: inline-block;
+        position: absolute;
+        right: 65%; } }
+    nav p a {
+      font-size: 1.5em;
+      font-weight: 500;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        nav p a {
+          font-size: 2em; } }
+  nav ul {
+    display: inline-block;
+    padding-top: 45px; }
+    @media (min-width: 768px) {
+      nav ul {
+        padding-top: 80px;
+        position: absolute;
+        left: 62%; } }
+  nav li {
+    display: inline-block;
+    padding: 15px; }
+    @media (min-width: 768px) {
+      nav li {
+        padding-top: 0px;
+        padding-bottom: 0px; } }
+    nav li a {
+      font-size: 1.2em;
+      font-weight: 500;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        nav li a {
+          font-size: 1.5em; } }
+
+/* end nav */
+/* ---------- PAGES GENERAL ---------- */
+#logo-img {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -50px; }
+  @media (min-width: 768px) {
+    #logo-img {
+      display: none; } }
+
+#logo-text {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -80px; }
+  @media (min-width: 768px) {
+    #logo-text {
+      display: block; } }
+
+#img-home {
+  background-image: url("../images/small_newLogo.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 600px; }
+  @media (min-width: 480px) {
+    #img-home {
+      background-image: url("../images/large_newLogo.jpg");
+      background-position: right; } }
+  @media (min-width: 1024px) {
+    #img-home {
+      background-position: top; } }
+
+/* ---------- HOME ---------- */
+/* ---------- MENU ---------- */
+/* ---------- GIFT CARDS ---------- */
 
 /*# sourceMappingURL=main.css.map */
