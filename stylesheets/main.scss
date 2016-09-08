@@ -34,8 +34,6 @@ nav {
   background-color: #333333;
   min-height: 250px;
 
-
-
   p {
     padding-top: 150px;
 
@@ -65,7 +63,7 @@ nav {
     @media (min-width: 768px) {
       padding-top: 80px; //guessed
       position: absolute;
-      left: 62%; //guessed
+      left: 63%; //guessed
     }
   }
 
@@ -129,6 +127,53 @@ nav {
     background-position: top;
   }
 }
+
+/* ---------- FOOTER ---------- */
+#footer-extras {
+  background-color: #333333;
+  min-height: 400px;
+  color: #ffffff;
+  text-align: center;
+
+  section {
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  h3 {
+    font-weight: 500;
+    text-align: right;
+  }
+
+  ul {
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  li {
+    font-weight: 400;
+    text-align: right;
+  }
+}
+
+#secGroup1, #secGroup2 {
+  display: inline-block;
+}
+
+.line {
+  width: 180px;
+  border-bottom: 4px solid #cc3333;
+}
+
+footer {
+  background-color: #663333;
+  min-height: 50px;
+  color: #ffffff;
+}
+
+
+
 
 /* ---------- HOME ---------- */
 
