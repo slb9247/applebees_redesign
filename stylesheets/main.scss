@@ -196,5 +196,43 @@ footer {
 }
 
 /* ---------- MENU ---------- */
+#menu-main {
+  background-color: #663333;
+  color: #ffffff;
+  text-align: center;
+}
+
+#menu-text {
+  display: inline-block;
+  text-align: left;
+
+  h2 {
+    font-weight: 400;
+    padding: 15px 0px 20px 0px;
+  }
+
+  h3 {
+    font-weight: 500;
+    padding: 0px 0px 10px 0px;
+  }
+
+  h4 {
+    font-weight: 500;
+    padding-left: 50px;
+    max-width: 400px;
+  }
+
+  h5 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    max-width: 300px;
+  }
+}
+
+.noDesc { // h4 items with no descriptions
+  margin-bottom: 20px;
+}
+
 
 /* ---------- GIFT CARDS ---------- */
