@@ -34,7 +34,7 @@ a:active {
 nav {
   text-align: center;
   background-color: #333333;
-  min-height: 250px;
+  min-height: 200px;
 
   p {
     padding-top: 150px;
@@ -108,10 +108,77 @@ nav {
   }
 }
 
+
+/* ---------- HOME ---------- */
+#img-home {
+  background-image: url('../images/small_newLogo.jpg');
+  background-size: cover;
+  background-position: top;
+  height: 600px;
+
+  @media (min-width: 480px) {
+    background-image: url('../images/large_newLogo.jpg');
+    background-position: right;
+  }
+
+  @media (min-width: 1024px) {
+    background-position: top;
+  }
+}
+
+/* ---------- MENU ---------- */
+#menu-main {
+  background-color: #663333;
+  color: #ffffff;
+  text-align: left;
+}
+
+#menu-text {
+  padding: 0px 10px;
+  display: inline-block;
+  text-align: left;
+
+  h2 {
+    font-weight: 400;
+    padding: 15px 0px 20px 0px;
+    cursor: pointer;
+  }
+
+  h3 {
+    font-weight: 500;
+    padding: 0px 0px 10px 0px;
+  }
+
+  h4 {
+    font-weight: 500;
+    padding-left: 50px;
+    max-width: 450px;
+  }
+
+  h5 {
+    font-weight: 500;
+    margin: 0px 0px 20px 0px;
+    padding-left: 100px;
+    max-width: 300px;
+  }
+}
+
+.menuSect {
+  display: none;
+}
+
+.noDesc { // h4 items with no descriptions
+  margin-bottom: 20px;
+}
+
+
+/* ---------- GIFT CARDS ---------- */
+
+
 /* ---------- FOOTER ---------- */
 #footer-extras {
   background-color: #333333;
-  min-height: 200px;
+  min-height: 180px;
   color: #ffffff;
   text-align: center;
 
@@ -177,62 +244,3 @@ footer {
   padding: 10px 0px 30px 0px;
   text-align: center;
 }
-
-/* ---------- HOME ---------- */
-#img-home {
-  background-image: url('../images/small_newLogo.jpg');
-  background-size: cover;
-  background-position: top;
-  height: 600px;
-
-  @media (min-width: 480px) {
-    background-image: url('../images/large_newLogo.jpg');
-    background-position: right;
-  }
-
-  @media (min-width: 1024px) {
-    background-position: top;
-  }
-}
-
-/* ---------- MENU ---------- */
-#menu-main {
-  background-color: #663333;
-  color: #ffffff;
-  text-align: center;
-}
-
-#menu-text {
-  display: inline-block;
-  text-align: left;
-
-  h2 {
-    font-weight: 400;
-    padding: 15px 0px 20px 0px;
-  }
-
-  h3 {
-    font-weight: 500;
-    padding: 0px 0px 10px 0px;
-  }
-
-  h4 {
-    font-weight: 500;
-    padding-left: 50px;
-    max-width: 400px;
-  }
-
-  h5 {
-    font-weight: 500;
-    margin-bottom: 20px;
-    padding-left: 80px;
-    max-width: 300px;
-  }
-}
-
-.noDesc { // h4 items with no descriptions
-  margin-bottom: 20px;
-}
-
-
-/* ---------- GIFT CARDS ---------- */
