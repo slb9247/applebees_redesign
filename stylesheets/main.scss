@@ -183,7 +183,7 @@ nav {
   text-align: center;
 
   section {
-    padding: 10px 20px;
+    padding: 10px 15px;
     display: inline-block;
     vertical-align: top;
   }
@@ -207,6 +207,10 @@ nav {
 
 #secGroup1, #secGroup2 {
   display: inline-block;
+}
+
+#secGroup2 {
+  padding-bottom: 30px;
 }
 
 .line {

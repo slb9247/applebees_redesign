@@ -132,7 +132,7 @@ nav {
   color: #ffffff;
   text-align: center; }
   #footer-extras section {
-    padding: 10px 20px;
+    padding: 10px 15px;
     display: inline-block;
     vertical-align: top; }
   #footer-extras h3 {
@@ -148,6 +148,9 @@ nav {
 
 #secGroup1, #secGroup2 {
   display: inline-block; }
+
+#secGroup2 {
+  padding-bottom: 30px; }
 
 .line {
   width: 150px;
