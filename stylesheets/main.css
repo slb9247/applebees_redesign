@@ -125,6 +125,11 @@ nav {
   margin-bottom: 20px; }
 
 /* ---------- GIFT CARDS ---------- */
+/* ---------- LOCATIONS ---------- */
+.test {
+  width: 40%;
+  margin: 0; }
+
 /* ---------- FOOTER ---------- */
 #footer-extras {
   background-color: #333333;
@@ -155,6 +160,11 @@ nav {
 .line {
   width: 150px;
   border-bottom: 4px solid #cc3333; }
+
+#social ul {
+  padding-bottom: 10px; }
+#social li {
+  display: inline-block; }
 
 footer {
   background-color: #663333;
