@@ -151,19 +151,22 @@ nav {
         text-align: right; } }
   #footer-extras ul {
     display: none;
-    padding-top: 10px; }
+    padding-top: 15px; }
     @media (min-width: 370px) {
       #footer-extras ul {
+        padding-top: 10px;
         display: block; } }
   #footer-extras li {
     font-size: .8em;
-    font-weight: 400;
-    text-align: right; }
+    font-weight: 400; }
+    @media (min-width: 370px) {
+      #footer-extras li {
+        text-align: right; } }
 
 #section-local,
 #section-eatSmart,
 #section-company {
-  border-bottom: 2px solid #cc3333; }
+  border-bottom: 2px solid rgba(204, 51, 51, 0.5); }
   @media (min-width: 370px) {
     #section-local,
     #section-eatSmart,
