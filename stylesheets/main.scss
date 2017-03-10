@@ -186,9 +186,21 @@ nav {
   section {
     padding: 10px 15px;
     vertical-align: top;
+    border-bottom: 2px solid rgba(204, 51, 51, .7);
 
     @media (min-width: 370px) {
       display: inline-block;
+      border-bottom: none;
+    }
+
+    ul {
+      display: none; /* jquery added toggle */
+      padding-top: 15px;
+
+      @media (min-width: 370px) {
+        padding-top: 10px;
+        display: block;
+      }
     }
   }
 
@@ -201,16 +213,6 @@ nav {
     }
   }
 
-  ul {
-    display: none; /* jquery added toggle */
-    padding-top: 15px;
-
-    @media (min-width: 370px) {
-      padding-top: 10px;
-      display: block;
-    }
-  }
-
   li {
     font-size: .8em;
     font-weight: 400;
@@ -220,16 +222,6 @@ nav {
     }
   }
 } /* end #footer-extras */
-
-#section-local,
-#section-eatSmart,
-#section-company {
-  border-bottom: 2px solid rgba(204, 51, 51, .7);
-
-  @media (min-width: 370px) {
-    border-bottom: none;
-  }
-}
 
 #secGroup1, #secGroup2 {
   display: inline;
@@ -256,14 +248,25 @@ nav {
 #social {
 
   ul {
-    padding-bottom: 10px;
+    padding: 10px 0;
+
+    @media(min-width: 370px) {
+      padding-bottom: 10px;
+    }
   }
 
   li {
     display: inline-block;
   }
-}
 
+  img {
+    width: 35px;
+
+    @media(min-width: 370px) {
+      width: 50px;
+    }
+  }
+}
 
 footer {
   background-color: #663333;

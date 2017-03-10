@@ -62,7 +62,8 @@ nav {
   position: absolute;
   top: 20px;
   left: 50%;
-  margin-left: -50px; }
+  margin-left: -50px;
+  /* half the width to fix offset */ }
   @media (min-width: 768px) {
     #logo-img {
       display: none; } }
@@ -72,7 +73,8 @@ nav {
   position: absolute;
   top: 20px;
   left: 50%;
-  margin-left: -80px; }
+  margin-left: -80px;
+  /* half the width to fix offset */ }
   @media (min-width: 768px) {
     #logo-text {
       display: block; } }
@@ -124,7 +126,6 @@ nav {
 .noDesc {
   margin-bottom: 20px; }
 
-/* ---------- GIFT CARDS ---------- */
 /* ---------- LOCATIONS ---------- */
 .test {
   width: 40%;
@@ -138,24 +139,26 @@ nav {
   text-align: center; }
   #footer-extras section {
     padding: 10px 15px;
-    vertical-align: top; }
+    vertical-align: top;
+    border-bottom: 2px solid rgba(204, 51, 51, 0.7); }
     @media (min-width: 370px) {
       #footer-extras section {
-        display: inline-block; } }
+        display: inline-block;
+        border-bottom: none; } }
+    #footer-extras section ul {
+      display: none;
+      /* jquery added toggle */
+      padding-top: 15px; }
+      @media (min-width: 370px) {
+        #footer-extras section ul {
+          padding-top: 10px;
+          display: block; } }
   #footer-extras h3 {
     font-size: 1em;
-    font-weight: 500;
-    text-align: center; }
+    font-weight: 500; }
     @media (min-width: 370px) {
       #footer-extras h3 {
         text-align: right; } }
-  #footer-extras ul {
-    display: none;
-    padding-top: 15px; }
-    @media (min-width: 370px) {
-      #footer-extras ul {
-        padding-top: 10px;
-        display: block; } }
   #footer-extras li {
     font-size: .8em;
     font-weight: 400; }
@@ -163,16 +166,7 @@ nav {
       #footer-extras li {
         text-align: right; } }
 
-#section-local,
-#section-eatSmart,
-#section-company {
-  border-bottom: 2px solid rgba(204, 51, 51, 0.7); }
-  @media (min-width: 370px) {
-    #section-local,
-    #section-eatSmart,
-    #section-company {
-      border-bottom: none; } }
-
+/* end #footer-extras */
 #secGroup1, #secGroup2 {
   display: inline; }
   @media (min-width: 370px) {
@@ -191,9 +185,17 @@ nav {
       border-bottom: 4px solid #cc3333; } }
 
 #social ul {
-  padding-bottom: 10px; }
+  padding: 10px 0; }
+  @media (min-width: 370px) {
+    #social ul {
+      padding-bottom: 10px; } }
 #social li {
   display: inline-block; }
+#social img {
+  width: 35px; }
+  @media (min-width: 370px) {
+    #social img {
+      width: 50px; } }
 
 footer {
   background-color: #663333;
