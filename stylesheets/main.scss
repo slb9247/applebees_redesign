@@ -73,8 +73,8 @@ nav {
     padding: 15px;
 
     @media (min-width: 768px) {
-      padding-top: 0px;
-      padding-bottom: 0px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     a {
@@ -133,47 +133,183 @@ nav {
 }
 
 #menu-text {
-  padding: 0px 10px;
-  display: inline-block;
-  text-align: left;
+  text-align: center;
 
   h2 {
     font-weight: 400;
-    padding: 15px 0px 20px 0px;
+    padding: 20px 0;
+    filter: grayscale(100%);
+    background-size: cover;
     cursor: pointer;
+  }
+
+  h2:hover {
+    filter: grayscale(0%);
   }
 
   h3 {
     font-weight: 500;
-    padding: 0px 0px 10px 0px;
+    padding-bottom: 10px;
+    color: #ff5959;
   }
 
   h4 {
     font-weight: 500;
-    padding-left: 50px;
-    max-width: 450px;
   }
 
   h5 {
     font-weight: 500;
-    margin: 0px 0px 20px 0px;
-    padding-left: 100px;
+    padding-bottom: 20px;
     max-width: 300px;
+  }
+} /* end #menu-text */
+
+
+
+h2:nth-of-type(1) { /* #twoFor20 */
+  //background-image: url('../images/drinks.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
   }
 }
 
+h2:nth-of-type(2) { /* #bevs */
+  background-image: url('../images/drinks.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(3) { /* #appsBar */
+  background-image: url('../images/apps.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(4) { /* #salads */
+  background-image: url('../images/salads.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(5) { /* #lunch */
+  background-image: url('../images/lunch.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(6) { /* #woodFired */
+  background-image: url('../images/woodFire.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(7) { /* #chicken */
+  background-image: url('../images/chicken.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(8) { /* #burgers */
+  background-image: url('../images/burgers.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(9) { /* #handhelds */
+  background-image: url('../images/handhelds.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(10) { /* #pasta */
+  background-image: url('../images/pasta.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(11) { /* #lighterFare */
+  background-image: url('../images/light.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(12) { /* #extras */
+  background-image: url('../images/extras.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(13) { /* #kids */
+  background-image: url('../images/kids.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+h2:nth-of-type(14) { /* #desserts */
+  background-image: url('../images/desserts.jpg');
+
+  @media (min-width: 480px) {
+    background-image: none;
+  }
+}
+
+
+
+.active { /* jquery added class */
+  filter: grayscale(0%) !important;
+}
+
 .menuSect {
-  display: none;
+  display: none; /* jquery added toggle */
+  padding-top: 20px;
+
+  @media (min-width: 480px) {
+    display: block;
+  }
+}
+
+.col1,
+.col2 {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+
+  @media (min-width: 480px) {
+    width: 350px;
+  }
+}
+
+#lunchHead {
+  display: block;
 }
 
 .noDesc { // h4 items with no descriptions
-  margin-bottom: 20px;
-}
-
-/* ---------- LOCATIONS ---------- */
-.test {
-  width: 40%;
-  margin: 0;
+  padding-bottom: 20px;
 }
 
 /* ---------- FOOTER ---------- */
@@ -285,7 +421,7 @@ footer {
 
   li {
     display: inline-block;
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 
   a {
@@ -295,6 +431,6 @@ footer {
 
 #copy {
   font-size: .8em;
-  padding: 10px 0px 30px 0px;
+  padding: 10px 0 30px 0;
   text-align: center;
 }
