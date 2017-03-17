@@ -97,16 +97,24 @@ nav {
 #menu-main {
   background-color: #663333;
   color: #ffffff;
-  text-align: left; }
+  text-align: left;
+  cursor: default; }
 
 #menu-text {
   text-align: center; }
   #menu-text h2 {
     font-weight: 400;
-    padding: 20px 0;
+    padding: 25px 0;
     filter: grayscale(100%);
     background-size: cover;
     cursor: pointer; }
+    @media (min-width: 480px) {
+      #menu-text h2 {
+        padding: 30px 0; } }
+    @media (min-width: 710px) {
+      #menu-text h2 {
+        padding: 20px 0 0;
+        cursor: default; } }
   #menu-text h2:hover {
     filter: grayscale(0%); }
   #menu-text h3 {
@@ -117,104 +125,103 @@ nav {
     font-weight: 500; }
   #menu-text h5 {
     font-weight: 500;
-    padding-bottom: 20px;
     max-width: 300px; }
 
 /* end #menu-text */
 h2:nth-of-type(1) {
   /* #twoFor20 */ }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(1) {
       background-image: none; } }
 
 h2:nth-of-type(2) {
   /* #bevs */
   background-image: url("../images/drinks.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(2) {
       background-image: none; } }
 
 h2:nth-of-type(3) {
   /* #appsBar */
   background-image: url("../images/apps.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(3) {
       background-image: none; } }
 
 h2:nth-of-type(4) {
   /* #salads */
   background-image: url("../images/salads.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(4) {
       background-image: none; } }
 
 h2:nth-of-type(5) {
   /* #lunch */
   background-image: url("../images/lunch.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(5) {
       background-image: none; } }
 
 h2:nth-of-type(6) {
   /* #woodFired */
   background-image: url("../images/woodFire.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(6) {
       background-image: none; } }
 
 h2:nth-of-type(7) {
   /* #chicken */
   background-image: url("../images/chicken.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(7) {
       background-image: none; } }
 
 h2:nth-of-type(8) {
   /* #burgers */
   background-image: url("../images/burgers.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(8) {
       background-image: none; } }
 
 h2:nth-of-type(9) {
   /* #handhelds */
   background-image: url("../images/handhelds.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(9) {
       background-image: none; } }
 
 h2:nth-of-type(10) {
   /* #pasta */
   background-image: url("../images/pasta.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(10) {
       background-image: none; } }
 
 h2:nth-of-type(11) {
   /* #lighterFare */
   background-image: url("../images/light.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(11) {
       background-image: none; } }
 
 h2:nth-of-type(12) {
   /* #extras */
   background-image: url("../images/extras.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(12) {
       background-image: none; } }
 
 h2:nth-of-type(13) {
   /* #kids */
   background-image: url("../images/kids.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(13) {
       background-image: none; } }
 
 h2:nth-of-type(14) {
   /* #desserts */
   background-image: url("../images/desserts.jpg"); }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     h2:nth-of-type(14) {
       background-image: none; } }
 
@@ -226,7 +233,7 @@ h2:nth-of-type(14) {
   display: none;
   /* jquery added toggle */
   padding-top: 20px; }
-  @media (min-width: 480px) {
+  @media (min-width: 710px) {
     .menuSect {
       display: block; } }
 
@@ -240,11 +247,21 @@ h2:nth-of-type(14) {
     .col2 {
       width: 350px; } }
 
+#twoFor20 h5 {
+  padding-bottom: 20px; }
+
 #lunchHead {
   display: block; }
 
-.noDesc {
+.end {
+  /* end of listing */
   padding-bottom: 20px; }
+
+hr {
+  display: none; }
+  @media (min-width: 710px) {
+    hr {
+      display: inline-block; } }
 
 /* ---------- FOOTER ---------- */
 #footer-extras {
@@ -270,10 +287,12 @@ h2:nth-of-type(14) {
           display: block; } }
   #footer-extras h3 {
     font-size: 1em;
-    font-weight: 500; }
+    font-weight: 500;
+    cursor: pointer; }
     @media (min-width: 370px) {
       #footer-extras h3 {
-        text-align: right; } }
+        text-align: right;
+        cursor: default; } }
   #footer-extras li {
     font-size: .8em;
     font-weight: 400; }
