@@ -1,9 +1,17 @@
+/*@media screen and (min-width:320px){} // mobile portrait*/
+/*@media screen and (min-width:480px){} // mobile landscape*/
+/*@media screen and (min-width:768px){} // ipad portrait*/
+/*@media screen and (min-width:1024px){} // browser, ipad landscape*/
+/*@media screen and (min-width:1200px){} // browser*/
+/*@media screen and (min-width:1600px){} // browser*/
 /* ---------- GENERAL ---------- */
 * {
   margin: 0 auto;
   padding: 0;
   text-decoration: none;
-  list-style: none; }
+  /* links*/
+  list-style: none;
+  /* lists*/ }
 
 /* ---------- LINKS ---------- */
 a:link {
@@ -13,7 +21,8 @@ a:visited {
   color: #ffffff; }
 
 a:hover {
-  color: #ffffff; }
+  color: #ffffff;
+  /*change*/ }
 
 a:active {
   color: #ffffff; }
@@ -43,8 +52,10 @@ nav {
     @media (min-width: 768px) {
       nav ul {
         padding-top: 80px;
+        /*guessed*/
         position: absolute;
-        left: 63%; } }
+        left: 63%;
+        /*guessed*/ } }
   nav li {
     display: inline-block;
     padding: 15px; }
@@ -105,6 +116,7 @@ nav {
   #menu-text h2 {
     font-weight: 400;
     padding: 25px 0;
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     background-size: cover;
     cursor: pointer; }
@@ -116,6 +128,7 @@ nav {
         padding: 20px 0 0;
         cursor: default; } }
   #menu-text h2:hover {
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%); }
   #menu-text h3 {
     font-weight: 500;
@@ -228,6 +241,7 @@ h2:nth-of-type(14) {
 
 .active {
   /* jquery added class */
+  -webkit-filter: grayscale(0%) !important;
   filter: grayscale(0%) !important; }
 
 .menuSect {
