@@ -129,7 +129,8 @@ nav {
 
 /* end #menu-text */
 h2:nth-of-type(1) {
-  /* #twoFor20 */ }
+  /* #twoFor20 */
+  background-image: url("../images/twoFor20.jpg"); }
   @media (min-width: 710px) {
     h2:nth-of-type(1) {
       background-image: none; } }
