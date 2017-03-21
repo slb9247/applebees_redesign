@@ -173,6 +173,34 @@ nav {
     font-weight: 500;
     max-width: 300px;
   }
+
+  .price {
+    color: #ff6e74;
+  }
+
+  .menuSect {
+    display: none; /* jquery added toggle */
+    padding-top: 20px;
+
+    @media (min-width: 710px) {
+      display: block;
+    }
+  }
+
+  .col1,
+  .col2 {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+
+    @media (min-width: 480px) {
+      width: 350px;
+    }
+  }
+
+  .end { /* end of listing */
+    padding-bottom: 20px;
+  }
 } /* end #menu-text */
 
 
@@ -296,26 +324,6 @@ h2:nth-of-type(14) { /* #desserts */
           filter: grayscale(0%) !important;
 }
 
-.menuSect {
-  display: none; /* jquery added toggle */
-  padding-top: 20px;
-
-  @media (min-width: 710px) {
-    display: block;
-  }
-}
-
-.col1,
-.col2 {
-  display: inline-block;
-  width: 300px;
-  vertical-align: top;
-
-  @media (min-width: 480px) {
-    width: 350px;
-  }
-}
-
 #twoFor20 {
 
   h5 {
@@ -325,10 +333,6 @@ h2:nth-of-type(14) { /* #desserts */
 
 #lunchHead {
   display: block;
-}
-
-.end { /* end of listing */
-  padding-bottom: 20px;
 }
 
 hr {
@@ -443,24 +447,23 @@ footer {
     padding-top: 20px;
     text-align: center;
 
-      p {
-        display: inline-block;
-        color: #cc3333;
-      }
-  }
+    li {
+      font-weight: 500;
+      font-size: .8em;
+      display: inline-block;
+      padding: 0 10px;
+    }
 
-  li {
-    display: inline-block;
-    padding: 0 10px;
-  }
-
-  a {
-    font-size: .8em;
+    p {
+      display: inline-block;
+      color: #cc3333;
+    }
   }
 }
 
 #copy {
-  font-size: .8em;
+  font-weight: 400;
+  font-size: .75em;
   padding: 10px 0 30px 0;
   text-align: center;
 }

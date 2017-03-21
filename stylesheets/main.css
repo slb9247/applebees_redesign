@@ -139,6 +139,27 @@ nav {
   #menu-text h5 {
     font-weight: 500;
     max-width: 300px; }
+  #menu-text .price {
+    color: #ff6e74; }
+  #menu-text .menuSect {
+    display: none;
+    /* jquery added toggle */
+    padding-top: 20px; }
+    @media (min-width: 710px) {
+      #menu-text .menuSect {
+        display: block; } }
+  #menu-text .col1,
+  #menu-text .col2 {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top; }
+    @media (min-width: 480px) {
+      #menu-text .col1,
+      #menu-text .col2 {
+        width: 350px; } }
+  #menu-text .end {
+    /* end of listing */
+    padding-bottom: 20px; }
 
 /* end #menu-text */
 h2:nth-of-type(1) {
@@ -244,33 +265,11 @@ h2:nth-of-type(14) {
   -webkit-filter: grayscale(0%) !important;
   filter: grayscale(0%) !important; }
 
-.menuSect {
-  display: none;
-  /* jquery added toggle */
-  padding-top: 20px; }
-  @media (min-width: 710px) {
-    .menuSect {
-      display: block; } }
-
-.col1,
-.col2 {
-  display: inline-block;
-  width: 300px;
-  vertical-align: top; }
-  @media (min-width: 480px) {
-    .col1,
-    .col2 {
-      width: 350px; } }
-
 #twoFor20 h5 {
   padding-bottom: 20px; }
 
 #lunchHead {
   display: block; }
-
-.end {
-  /* end of listing */
-  padding-bottom: 20px; }
 
 hr {
   display: none; }
@@ -353,17 +352,18 @@ footer {
   footer ul {
     padding-top: 20px;
     text-align: center; }
+    footer ul li {
+      font-weight: 500;
+      font-size: .8em;
+      display: inline-block;
+      padding: 0 10px; }
     footer ul p {
       display: inline-block;
       color: #cc3333; }
-  footer li {
-    display: inline-block;
-    padding: 0 10px; }
-  footer a {
-    font-size: .8em; }
 
 #copy {
-  font-size: .8em;
+  font-weight: 400;
+  font-size: .75em;
   padding: 10px 0 30px 0;
   text-align: center; }
 
